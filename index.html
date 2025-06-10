@@ -1,60 +1,72 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Revisâo Formulários HTML5</title>
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
 
 </head>
+
 <body>
     <form>
         <label for="texto" id="texto">Campo de Texto</label>
-        <input  type="text" id="texto" required><br/>
+        <input type="text" id="texto" required><br />
         <label for="numero" id="numero">Campo de Número</label>
-        <input type="number" id="numero" required min="0" max="100"><br/>
+        <input type="number" id="numero" required min="0" max="100"><br />
         <label for="data">Campo de Datas</label>
-        <input type="date" id="data" required><br/>
+        <input type="date" id="data" required><br />
         <label for="cor">Campo de cor</label>
-        <input type="color" id="color" required><br/>
-        <label for="check"> Caixa de Checagem</label> 
-        <input type="checkbox" id="check" required><br/>
+        <input type="color" id="color" required><br />
+        <label for="check"> Caixa de Checagem</label>
+        <input type="checkbox" id="check" required><br />
         <label for="intervalo">Campo de Intervalo</label>
-        <input type="range" id="intervalo" required><br/>
+        <input type="range" id="intervalo" required><br />
         <label for="senha">Campo de Senha</label>
-        <input type="password" id="senha" required><br/>
-        <input type="button" value="Sem ação"><br/>
-        <input type="submit" value="Enviar"><br/>
-        <input type="reset" value="Limpar"><br/>
-        <input type="text" id="outroTexto" placeholder="VAI CORINTHIANS!" readonly><br/>
+        <input type="password" id="senha" required><br />
+        <input type="button" value="Sem ação"><br />
+        <input type="submit" value="Enviar"><br />
+        <input type="reset" value="Limpar"><br />
+        <input type="text" id="outroTexto" placeholder="VAI CORINTHIANS!" readonly><br />
         <label id="masc">Masculino</label>
-        <input type="radio" id="masc" name="sexo" checked><br/>
+        <input type="radio" id="masc" name="sexo" checked><br />
         <label id="fem">Feminino</label>
-        <input type="radio" id="fem" name="sexo"><br/>
+        <input type="radio" id="fem" name="sexo"><br />
         <label for="telefone">Campo de telefone</label>
-        <input type="tel" id="telefone" pattern="[0-9]{2}-[0-9]{1}-[0-9]{4}-[0-9]{4}"><br/>
+        <input type="tel" id="telefone" pattern="[0-9]{2}-[0-9]{1}-[0-9]{4}-[0-9]{4}"><br />
         <label for="estados">Selecione um estado</label>
         <select id="estados">
             <option>PR</option>
             <option>SC</option>
             <option>RS</option>
-        </select><br/><br/><br/>
+        </select><br /><br /><br />
 
         <h1>Formulário mais organizado</h1>
         <fieldset>
             <legend>Dados Pessoais</legend>
             <label for="nomeAluno">Nome</label>
-            <input type="text" id="nomeAluno"><br/>
+            <input type="text" id="nomeAluno"><br />
             <label for="idadeAluno">Idade</label>
-            <input type="number" id="idadeAluno"><br/>
+            <input type="number" id="idadeAluno"><br />
             <label for="telefoneAluno">Telefone</label>
-            <input type="tel" id="telefoneAluno"><br/>
+            <input type="tel" id="telefoneAluno"><br />
             <textarea rows="20" cols="30">
                 Fale um pouco sobre você!
             </textarea>
+            <datalist id="escolas">
+                <option>São Cristóvão</option>
+                <option>Eleodoro</option>
+                <option>Mario Quintana</option>
+            </datalist>
+
         </fieldset>
 
     </form>
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
